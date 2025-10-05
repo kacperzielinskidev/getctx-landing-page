@@ -22,11 +22,6 @@ export default function Home() {
       <Navigation />
 
       <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-12 sm:pb-16 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs sm:text-sm font-mono mb-4 sm:mb-6">
-          <Zap className="w-3 h-3" />
-          CLI tool for developers
-        </div>
-
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance leading-tight">
           Aggregate code context
           <br />
