@@ -89,8 +89,9 @@ export default function Home() {
               Interactive Selection
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Navigate your filesystem with arrow keys, select files with
-              spacebar, and use CTRL+A for bulk selection.
+              Navigate your filesystem and select files, while the tool
+              intelligently ignores common items like .git and node_modules,
+              preventing them from being added to your context.
             </p>
           </div>
 
@@ -100,8 +101,8 @@ export default function Home() {
             </div>
             <h3 className="text-lg font-semibold mb-2">Smart Filtering</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Press / to filter files in real-time. Automatically excludes
-              node_modules, .git, and other common directories.
+              Press / to filter the current view in real-time. Instantly find
+              any file or directory with a case-insensitive search.
             </p>
           </div>
 
