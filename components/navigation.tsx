@@ -4,12 +4,10 @@ import { Terminal, Menu, X } from "lucide-react";
 import { Button } from "@/components/button";
 import Link from "next/link";
 import { useState } from "react";
-// 1. Zaimportuj usePathname
 import { usePathname } from "next/navigation";
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  // 2. Pobierz aktualną ścieżkę (pathname)
   const pathname = usePathname();
 
   return (
@@ -24,9 +22,7 @@ export function Navigation() {
             <span className="font-mono font-semibold text-lg">getctx</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {/* 3. Zastosuj warunkowe klasy dla każdego linku */}
             <Link
               href="/features"
               className={`text-sm hover:text-foreground transition-colors ${
@@ -62,13 +58,7 @@ export function Navigation() {
               className="bg-primary text-primary-foreground hover:bg-primary/90"
               asChild
             >
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started
-              </a>
+              <Link href="/install">Get Started</Link>
             </Button>
           </div>
 

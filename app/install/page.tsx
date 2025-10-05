@@ -3,7 +3,7 @@ import { FaApple, FaLinux, FaWindows, FaDownload } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 
 import { Footer } from "@/components/footer";
-import { Download, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function InstallPage() {
   return (
@@ -13,10 +13,6 @@ export default function InstallPage() {
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-12 sm:pb-16">
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs sm:text-sm font-mono mb-4 sm:mb-6">
-            <Download className="w-3 h-3" />
-            Installation Guide
-          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance">
             Get Started in Seconds
           </h1>
@@ -349,7 +345,7 @@ export default function InstallPage() {
             <div className="space-y-4">
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-3 mb-2">
-                  <code className="font-mono   text-sm">-o, --output</code>
+                  <code className="font-mono text-sm">-o &lt;filename&gt;</code>
                   <span className="text-xs sm:text-sm text-muted-foreground">
                     Specify custom output file
                   </span>

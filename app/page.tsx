@@ -68,7 +68,7 @@ export default function Home() {
         {/* Terminal Screenshot */}
         <div className="relative rounded-lg overflow-hidden border border-border shadow-2xl">
           <Image
-            src="/getctx-img-presentation.png"
+            src="/getctx-img.png"
             alt="getctx CLI interface showing file selection"
             width={1200}
             height={700}
@@ -226,10 +226,12 @@ export default function Home() {
         <div className="text-center mt-8 sm:mt-12">
           <Button
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono w-full sm:w-auto"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono w-full sm:w-auto cursor-pointer"
           >
-            <Terminal className="w-4 h-4 mr-2" />
-            Get Started
+            <Link className="flex items-center" href="/install">
+              <Terminal className="w-4 h-4 mr-2" />
+              Get Started
+            </Link>
           </Button>
         </div>
       </section>

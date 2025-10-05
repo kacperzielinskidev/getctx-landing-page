@@ -41,14 +41,11 @@ export default function DocsPage() {
             <a href="#usage-guide" className=" hover:underline">
               3. Usage Guide
             </a>
-            <a href="#architecture" className=" hover:underline">
-              4. Architecture
-            </a>
             <a href="#configuration" className=" hover:underline">
-              5. Configuration
+              4. Configuration
             </a>
             <a href="#troubleshooting" className=" hover:underline">
-              6. Troubleshooting
+              5. Troubleshooting
             </a>
           </div>
         </div>
@@ -208,7 +205,8 @@ export default function DocsPage() {
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-sm sm:text-base text-muted-foreground">
-                    Cancel / Clear selections and exit
+                    Abort and exit immediately (in normal mode). Cancels input
+                    or filtering if active.
                   </span>
                   <code className="px-2 sm:px-3 py-1 rounded bg-secondary font-mono text-xs sm:text-sm whitespace-nowrap">
                     CTRL+C
